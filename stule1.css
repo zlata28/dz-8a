@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: centers;
+    height: 100vb;
+}
+.bo{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+perspective: 1000px;
+}
+h1{
+    position: absolute;
+   color: blue;
+    z-index: -1;
+}
+.dor{
+    width: 400px;
+    height: 400px;
+    border: 8px solid darkmagenta;
+    background-color: darkorchid;
+    transform-origin: all 2s;
+}
+.dor_left{
+    transform-origin: left;
+}
+.dor_right{
+    transform-origin: right;
+}
+.bo:hover .dor_left{
+    transform: rotateY(50deg);
+}
+.bo:hover .dor_right{
+    transform: rotateY(-50deg);
+}    
